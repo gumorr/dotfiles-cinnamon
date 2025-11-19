@@ -13,4 +13,4 @@ if [ ! -d "$screenshot_dir"/"$month_dir" ]; then
     mkdir -p "$screenshot_dir"/"$month_dir"
 fi
 
-exec gnome-screenshot -a -f="$screenshot_dir"/"$month_dir"/"$filename".png
+exec gnome-screenshot -a -f "$screenshot_dir"/"$month_dir"/"$filename".png
