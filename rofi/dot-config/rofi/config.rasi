@@ -1,0 +1,102 @@
+configuration {
+    modes: "drun,run";
+    sorting-method: "normal";
+    show-icons:true;
+    matching: "normal";
+    drun-match-fields: "name";
+    display-run: "Shell:";
+    display-drun: "Apps:";
+}
+
+@theme "carbonfox"
+
+* {
+    font: "Sans 9";
+
+    background-color:   transparent;
+    text-color:         @fg0;
+
+    margin:     0px;
+    padding:    0px;
+    spacing:    0px;
+}
+
+window {
+    location:       center;
+    width:          480;
+    y-offset:       0;
+    border-radius:  12px;
+
+    border: 1px;
+    border-color: @bg1;
+    background-color:   @bg0;
+}
+
+mainbox {
+    padding:    6px;
+}
+
+inputbar {
+    background-color:   @bg1;
+    border-radius:  9px;
+
+    padding:    4px 6px;
+    spacing:    4px;
+    children:   [ prompt, entry ];
+}
+
+prompt {
+    font: "Sans Bold 9";
+}
+
+entry {
+    placeholder:        "Search";
+    placeholder-color:  @fg0;
+}
+
+message {
+    margin:             12px 0 0;
+    border-radius:      12px;
+    background-color:   @bg1;
+}
+
+textbox {
+    padding:    4px 6px;
+    background-color:   @bg1;
+}
+
+listview {
+    background-color:   transparent;
+    margin:     6px 0 0;
+    columns:    1;
+    lines:      6;
+
+    fixed-height: false;
+}
+
+element {
+    padding:        4px 6px;
+    spacing:        4px;
+    border-radius:  9px;
+}
+
+element normal urgent {
+  text-color: @urgent;
+}
+
+element normal active {
+    text-color: @accent;
+}
+
+element selected normal, element selected active {
+    background-color:   @bg1;
+}
+
+element-icon {
+    size:           1em;
+    vertical-align: 0.5;
+}
+
+element-text {
+    text-color: inherit;
+}

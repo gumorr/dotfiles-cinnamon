@@ -1,0 +1,18 @@
+* {
+  bg0     : #161616;
+  bg1     : #282828;
+  fg0     : #f2f4f8;
+
+  blue    : #5a6a87;
+  cyan    : #5a8a8f;
+  green   : #5a7a67;
+  orange  : #bf7a5a;
+  pink    : #bf7290;
+  purple  : #7a5a87;
+  red     : #b35a67;
+  teal    : #5a8a72;
+  yellow  : #bfa860;
+
+  accent: @blue;
+  urgent: @yellow;
+}
